@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding:0;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /*Barra de navegacion*/
@@ -70,3 +71,8 @@ nav div a:visited, nav div a:link {
     margin: 0 20px;
   }
 */
+
+main {
+  
+  min-height: 70%;
+}
