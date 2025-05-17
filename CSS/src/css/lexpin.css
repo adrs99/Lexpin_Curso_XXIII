@@ -73,6 +73,6 @@ nav div a:visited, nav div a:link {
 */
 
 main {
-  
+  height: 70vh;
   min-height: 70%;
 }
