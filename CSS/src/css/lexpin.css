@@ -26,7 +26,6 @@ nav {
   padding: 20px;
   /*Radio de los bordes, se lee arriba izquierda, arriba derecha
   abajo izquierda, abajo derecha*/
-  border-radius: 0 0 15px 15px;
 }
 
 /*
@@ -51,6 +50,7 @@ nav div {
 nav div a:visited, nav div a:link {
   color:white;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .enlace:hover {
@@ -88,6 +88,7 @@ header {
   height: 80vh;
   min-height: 80vh;
   background-color: aqua;
+  background-image: url("https://img.freepik.com/fotos-premium/color-abstracto-papel-plantillas_980736-10657.jpg");
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 25px;
