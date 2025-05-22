@@ -84,12 +84,14 @@ main {
   un sistema de filas y columnas
 */
 
+
+
 header {
-  height: 80vh;
+  height: 80vh; 
   min-height: 80vh;
   background-color: aqua;
   background-size: cover;
-  background-image: url("https://img.freepik.com/fotos-premium/color-abstracto-papel-plantillas_980736-10657.jpg");
+  /*opacity: 0.1;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 25px;
@@ -99,6 +101,31 @@ header {
   /*eje secundario*/
   align-content: center;
   gap: 20px;
+}
+
+/*
+  Los pseudoelementos permiten seleccionar partes de un elemento
+  ::before se activa antes de que el elemento sea renderizado
+  ::after se activa después de que el elemento sea renderizado
+  ::first-letter se activa en la primera letra del elemento
+  ::first-line se activa en la primera línea del elemento
+  ::selection se activa cuando el elemento es seleccionado
+  ::placeholder se activa cuando el elemento es un placeholder
+  ::marker se activa en el marcador de una lista
+*/
+
+header::before {
+  background-image: url("https://img.freepik.com/fotos-premium/color-abstracto-papel-plantillas_980736-10657.jpg");
+  background-size: cover;
+  background-position: center;
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 header > div{
@@ -114,6 +141,8 @@ header > div > div {
   flex-direction: column;
   gap: 5px;
 }
+
+
 
 /*ANIMACIÓN*/
 .gradient-background {
@@ -132,4 +161,4 @@ header > div > div {
   100% {
     background-position: 0% 50%;
   }
-} 
+}
